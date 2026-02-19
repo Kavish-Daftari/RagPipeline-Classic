@@ -60,7 +60,5 @@ def generate_answer(query: str, chunks: List[Dict]) -> str:
     return ai_msg.content
 
 
-if __name__ == "__main__":
-    print("=== Generation Test (LangChain) ===")
-    print(f"   Using: ChatGroq(model={GROQ_MODEL})")
+
 

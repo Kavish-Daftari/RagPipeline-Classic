@@ -103,8 +103,6 @@ def ingest_document(file_path: str) -> List[Dict]:
     print(f"Ingested '{file_name}' → {len(records)} chunks")
     return records
 
-result=extract_pages("/Users/kavishdaftari/RAG/RagPipeline-Classic/docs/Nike-Inc-2025_10K.pdf")
-print(result)
 
 
 

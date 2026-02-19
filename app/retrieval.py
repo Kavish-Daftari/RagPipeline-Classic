@@ -50,16 +50,3 @@ def search(query: str, top_k: int = TOP_K) -> List[Dict]:
     return hits
 
 
-if __name__ == "__main__":
-    import sys
-
-    print("=== Retrieval Test ===")
-    query = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "What was Apple's revenue?"
-    print(f"Query: {query}\n")
-
-    results = search(query, top_k=3)
-    print(f"Found {len(results)} results:\n")
-    for i, r in enumerate(results, 1):
-        print(f"  [{i}] score={r['score']:.4f} | source={r['source']}")
-        print(f"      {r['chunk_text'][:150]}...\n")
-    print("✅ Retrieval test passed!")
