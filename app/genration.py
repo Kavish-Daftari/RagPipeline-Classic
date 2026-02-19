@@ -1,7 +1,7 @@
 """
 Generation module — sends the retrieved context + user query to an LLM
 and returns the final answer.
-Uses LangChain's ChatOpenAI for LLM interaction.
+Uses LangChain's ChatGroq for LLM interaction.
 """
 
 from typing import List, Dict
@@ -47,7 +47,7 @@ def build_context_block(chunks: List[Dict]) -> str:
 
 def generate_answer(query: str, chunks: List[Dict]) -> str:
     """
-    Generate an answer with inline citations using LangChain ChatOpenAI.
+    Generate an answer with inline citations using LangChain ChatGroq.
     """
     context = build_context_block(chunks)
 
