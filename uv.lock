@@ -572,6 +572,7 @@ dependencies = [
     { name = "fastapi" },
     { name = "langchain-groq" },
     { name = "pinecone" },
+    { name = "pydantic" },
     { name = "pypdf" },
     { name = "uvicorn" },
 ]
@@ -583,6 +584,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.129.0" },
     { name = "langchain-groq", specifier = ">=1.1.2" },
     { name = "pinecone", specifier = ">=8.0.1" },
+    { name = "pydantic", specifier = ">=2.12.5" },
     { name = "pypdf", specifier = ">=6.7.1" },
     { name = "uvicorn", specifier = ">=0.41.0" },
 ]

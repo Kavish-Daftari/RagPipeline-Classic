@@ -108,20 +108,3 @@ print(result)
 
 
 
-# if __name__ == "__main__":
-#     import sys
-
-#     print("=== Ingestion Test ===")
-#     test_path = sys.argv[1] if len(sys.argv) > 1 else "docs/Apple_Q24.pdf"
-#     print(f"Testing with: {test_path}")
-
-#     records = ingest_document(test_path)
-#     print(f"Total chunks: {len(records)}")
-#     print(f"\nFirst chunk preview:")
-#     print(f"  ID   : {records[0]['id']}")
-#     print(f"  Source: {records[0]['source']}")
-#     print(f"  Text : {records[0]['chunk_text'][:200]}...")
-#     print(f"\nLast chunk preview:")
-#     print(f"  ID   : {records[-1]['id']}")
-#     print(f"  Text : {records[-1]['chunk_text'][:200]}...")
-#     print("✅ Ingestion test passed!")

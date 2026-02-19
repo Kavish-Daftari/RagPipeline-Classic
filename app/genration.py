@@ -62,18 +62,5 @@ def generate_answer(query: str, chunks: List[Dict]) -> str:
 
 if __name__ == "__main__":
     print("=== Generation Test (LangChain) ===")
-    print(f"   Using: ChatOpenAI(model={OPENAI_MODEL})")
+    print(f"   Using: ChatGroq(model={GROQ_MODEL})")
 
-    # Test with dummy context
-    test_chunks = [
-        {"chunk_text": "Apple reported Q4 2024 revenue of $94.9 billion, up 6% year over year.", "source": "Apple_Q24.pdf"},
-        {"chunk_text": "Services revenue reached an all-time record of $25 billion.", "source": "Apple_Q24.pdf"},
-    ]
-    test_query = "What was Apple's revenue in Q4 2024?"
-
-    print(f"Query: {test_query}")
-    print(f"Context chunks: {len(test_chunks)}\n")
-
-    answer = generate_answer(test_query, test_chunks)
-    print(f"💬 Answer:\n{answer}")
-    print("\n✅ Generation test passed (LangChain)!")
